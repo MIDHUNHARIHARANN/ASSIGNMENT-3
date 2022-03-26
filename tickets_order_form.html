@@ -1,0 +1,159 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Event Tickets Order Form</title>
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">		
+	</head>
+
+	<body>
+		<div id="frame">
+			<header>
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;">
+				<div id="header-line-1">New Year Central</div>
+				<div id="header-line-2">For the child in all of us!</div>
+			</header>
+
+			<!-- navigation starts -->
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<aside>
+				<div class="sidebar-title">Products of The Week...</div>
+				<ul>
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
+				</ul>
+			</aside>
+			
+			<main>
+				<h1>Order Event Tickets</h1>
+				<!-- The form starts here... -->
+			<form name="order_form" action="place_order.html" method="post">
+				<fieldset id="one">
+					<legend>Member Information</legend>
+					<label for="mailid">E-mail:  </label>
+					<input type="email" id="mailid" name="mailid", title="Your Email Id"><br>
+					<label for="fname">First Name:  </label>
+					<input type="text" id="fname" name="fname" required title="First Name"><br>
+					<label for="lname">Last Name:  </label>
+					<input type="text" id="lname" name="lname" required title="Last Name"><br>
+					<label for="addr">Address:  </label>
+					<input type="text" id="addr" name="addr" title="Address"><br>
+					<label for="city">City:  </label>
+					<input type="text" id="city" name="city" required title="City"><br>
+					<label for="province">Province:  </label>
+					<input type="text" id="province" name="province" maxlength=2 , placeholder="2-character code" required title="Province"><br>
+					<label for="postal_code">Postal Code: </label>
+					<input type="text" name="postal_code" id="postal_code" maxlength="6", placeholder="6 characters" required title="Postal Code"><br>
+					<label for="phone">Phone Number: </label>
+					<input type="tel" name="phone" id="phone" maxlength="10" placeholder="999-999-9999" title="Phone Number">
+				</fieldset>
+					
+				<fieldset id="two">
+					<legend>Ordering Information</legend>
+					<label for="event">Event: </label>
+					<select name="event">
+						<option value="Cookie">Cookie Decoration Contest</option>
+						<option value="Tree">Tree Decoration Contes</option>
+						<option value="Gift">Gift of Light Ride-Along</option>
+						<option value="Breakfast">Breakfast with Santa</option>
+					</select><br>
+
+					
+
+					<label for="type"> Order Type:</label>
+					<select name="type">
+						<option value="Member">Member Package</option>
+						<option value="Donor">Donor Package</option>
+						<option value="Tickets">Single Tickets</option>
+					</select><br>
+
+					<label for="number">Number of Tickets: </label>
+					<input type="text" id="name" name="number" placeholder="Number of single tickets" required>
+
+				</fieldset>
+
+
+				<fieldset id="three">
+					<legend>Payment Method</legend>
+					<input type="radio" id="Bill" name="payment" value="Bill"> Bill Me
+					<input type="radio" id="credit" name="payment" value="credit"> Credit Card<br>
+
+				</fieldset>
+
+
+				<fieldset id="four">
+					<legend>Credit Card Information</legend>
+					<label for="cardtype">Card Type: </label>
+					<select name="card" id="card"> 
+							<option value="visa">Visa</option>
+							<option value="master">Master</option>
+							<option value="dis">Discover</option>
+						</select><br>
+					
+					<label for="cardnumber">Card Number: </label>	
+					<input type="text" id="cardnumber" name="cardnumber" placeholder="16 digits" required maxlength=16 title="Your Card Number"><br>
+					
+
+					<label for="date">Expiration Date: </label>
+					
+
+					<select name="date" id="date">
+						<option value="date">January</option>
+						<option value="date">February</option>
+						<option value="date">March</option>
+						<option value="date">April</option>
+						<option value="date">May</option>
+						<option value="date">June</option>
+						<option value="date">July</option>
+						<option value="date">August</option>
+						<option value="date">September</option>
+						<option value="date">October</option>
+						<option value="date">November</option>
+						<option value="date">December</option>
+					</select>
+
+
+					<select name="year" id="year">
+						<option value="date">2021</option>
+						<option value="date">2022</option>
+						<option value="date">2023</option>
+						<option value="date">2024</option>
+						<option value="date">2025</option>
+						<option value="date">2026</option>
+						<option value="date">2027</option>
+					</select>
+				</fieldset>
+
+
+				<fieldset id="five">
+					
+					<legend>Submit Your Order</legend>
+					
+						<input type="submit"style="width: 10em;" id= "Submit" value="      Submit      ">
+						
+						
+						<input type="reset" style="width: 10em;" id="reset" value=  "    Reset Fields    ">
+					</form>	
+				</fieldset>
+
+						
+			</form>
+			</main>
+			
+			<footer>
+				<p>&copy; 2021 New Year Central. Created by Johnny White.</p>
+			</footer>
+		</div>
+	</body>
+</html>
